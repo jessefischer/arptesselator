@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arptesselator</title>
+	<link rel='stylesheet' href='css/styles.css'>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+	<script src='js/jquery-3.4.1.min.js'></script>
+	<script src='js/underscore-min.js'></script>
+	<script src='js/backbone-min.js'></script>
+	<script src='js/app.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.84/Tone.js'></script>
+</head>
+
+<body>
+
+<div id='app'>
+
+<nav>
+<h1>A R P T E S S E L A T O R</h1>
+</nav>
+
+<form>
+
+<div class='parameter'>
+	<select id='keySelect'></select>
+	<label for='keySelect'>Key</label>
+</div>
+
+<div class='parameter'>
+	<select id='scaleSelect'></select>
+	<label for='scaleSelect'>Scale</label>
+</div>
+
+<div class='parameter'>
+	<input type='text' name='tempo' id='tempo' size='3'>
+	<label for='tempo'>Tempo</label>
+</div>
+
+<div class='parameter'>
+	<input type='text' name='steps' id='steps' size='3'>
+	<label for='steps'>Steps</label>
+</div>
+
+<div class='parameter'>
+	<select id='mungeFreqSelect'>
+		<option value='0'>0</option>
+		<option value='0.01'>1</option>
+		<option value='0.02'>2</option>
+		<option value='0.03'>3</option>
+	</select>
+	<label for='mungeFreqSelect'>Munge</label>
+</div>
+
+</form>
+
+<div id='patternGrid'></div>
+
+
+<button type='button' id='playPauseButton'>Play</button>
+<div id='mainText'>
+	
+
+
+</div>
+
+
+</div>
+
+</body>
+
+
+</html>

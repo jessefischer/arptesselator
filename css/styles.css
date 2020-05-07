@@ -1,0 +1,113 @@
+body {
+
+	background-color: black;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 2.2em;
+}
+
+div#app {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	overflow-y: none;
+}
+
+div#mainText {
+	font-size: 1.5em;
+	padding: 10vh 10vw;
+}
+
+/* PARAMETERS */
+
+div.parameter {
+	display: inline-block;
+	text-align: center;
+	margin: 0 5px;
+}
+
+div.parameter select, div.parameter input {
+	display: block;
+	margin: 3px auto;
+	text-align: center;
+	text-align-last: center;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	font-size: 1.5em;
+	font-weight: lighter;
+	border: 0px;
+	border-radius: 0px;
+	padding: 3px;
+	background-color: rgb( 30, 30, 30 );
+	color: white;
+}
+
+option {
+	text-align: center;
+	font-weight: lighter;
+}
+
+div.parameter label {
+	font-size: 0.8em;
+	color: purple;
+}
+
+div#patternGrid {
+	margin: 50px;
+}
+
+div.patternCol {
+	display: inline-block;
+}
+
+div.patternCol input[type='checkbox'] {
+	visibility: hidden;
+}
+
+div.gridCell {
+	height: 35px;
+	width: 35px;
+	margin: 2px;
+	background-color: rgb( 30, 30, 30 );
+	box-shadow: inset 0px 0px 12px 3px rgba( 0, 0, 0, 0.5 ), 0px 0px 12px 3px rgba( 128, 0, 128, 0.125);
+	transition: background-color 0.75s;
+}
+
+div.gridCell:hover {
+	cursor: pointer;
+}
+
+div.gridCell.active {
+	/*background-color: rgb( 24, 204, 255 ); */
+	background-color: purple;
+	transition: background-color 0.125s;	
+}
+
+div.gridCell.playing {
+	background-color: rgb( 205, 244, 255 );
+	transition: background-color 0.125s;		
+}
+
+button {
+	background-color: purple;
+	color: black;
+	border-radius: 25px;
+	padding: 12px 15px;
+	border: 0px;
+	box-shadow: inset 0px 0px 12px 2px rgba( 0, 0, 0, 0.25 );
+	text-transform: uppercase;
+	font-size: 1em;
+	-webkit-appearance: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
